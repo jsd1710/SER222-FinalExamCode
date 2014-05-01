@@ -1,6 +1,6 @@
 
 
-class RandomArray {
+public class RandArray {
 
     public static java.util.Random rng = new java.util.Random();
     
