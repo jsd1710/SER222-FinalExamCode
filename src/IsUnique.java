@@ -12,6 +12,10 @@ public class IsUnique{
 
     public static void main(String[] args) {
         //Test your code here (do not ask for input)
+        
+        RandArray.rng.setSeed(127); 
+        int[] a1 = RandArray.randArray(100, 0, 98);
+
     }
 }
 

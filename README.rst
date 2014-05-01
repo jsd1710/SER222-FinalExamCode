@@ -2,7 +2,7 @@
 Final Exam
 ----------
 
-Solve each of these in a separate folder. 
+Solve each of these in a separate file. 
 Each solution should be entirely within one JAR file. 
 
 I should be able to run tests with

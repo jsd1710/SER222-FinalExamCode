@@ -4,6 +4,8 @@ public class Middle{
 
     /** Return the value in the middle of a linked list. 
      *
+     * Return the item at position floor(length/2)
+     *
      * @param head The head node of a linked list. 
      *
      * Your solution must work in one pass. 
