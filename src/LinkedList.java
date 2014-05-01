@@ -22,6 +22,7 @@ public class LinkedList
     public static void printList(Node head) 
     {
         //Print the numbers as 1->2->3->....
+    	
 
     }
 

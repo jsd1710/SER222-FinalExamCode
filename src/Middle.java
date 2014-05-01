@@ -10,6 +10,7 @@ public class Middle{
      */
     public static int middle(LinkedList.Node head) 
     {
+    	//Return floor if even.
     	return 0; //TODO: Replace this.
     }
 
