@@ -12,7 +12,8 @@ public class IsUnique
         return true; //TODO: replace this.
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         //Test your code here (do not ask for input)
         
         RandArray.rng.setSeed(127); 
