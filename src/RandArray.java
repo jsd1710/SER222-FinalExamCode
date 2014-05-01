@@ -1,7 +1,7 @@
 
-public class RandomArray 
+public class RandArray 
 {
-	static java.util.Random rng = new java.util.Random();
+	public static java.util.Random rng = new java.util.Random();
 	/** Generate n random integers WITH duplicates.
 	 */
 	public static int[] randArray(int n, int low, int high)
