@@ -8,7 +8,9 @@ public class Middle{
      *
      * Your solution must work in one pass. 
      */
-    public static int middle(LinkedList.Node head) {
+    public static int middle(LinkedList.Node head) 
+    {
+    	return 0; //TODO: Replace this.
     }
 
     public static void main(String[] args) {

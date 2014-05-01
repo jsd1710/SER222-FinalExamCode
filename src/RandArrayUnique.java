@@ -9,11 +9,13 @@ public class RandArrayUnique{
      * @param high The maximum possible random value to generate. 
      * @return An array of random integers in random order, each in low..high.
      */
-    public static int[] randArrayUnique(int n, int low, int high) {
-        
+    public static int[] randArrayUnique(int n, int low, int high) 
+    {
+        return null; //TODO: Replace this.
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         //Test your code here (do not ask for input)
     }
 }
