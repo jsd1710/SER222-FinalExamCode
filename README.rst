@@ -3,7 +3,7 @@ Final Exam
 Due midnight of 5-8-2014 (Thursday)
 
 Solve each of these in a separate file. 
-Each solution should be entirely within one JAR file. 
+Each solution should be entirely within one JAVA file. 
 
 I should be able to run tests with
 
