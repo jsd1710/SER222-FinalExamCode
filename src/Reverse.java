@@ -1,4 +1,8 @@
-
+/**This is the complete Reverse class, tested for accuracy.
+ * 
+ * @author jacob.dobkins
+ *
+ */
 public class Reverse
 {
 
@@ -21,16 +25,16 @@ public class Reverse
     	
     	LinkedList.Node tempReverse = reversedHead; //Used for traversing the reversed Linked List.
     	while (headLength >= 0)
-    	{//While there are Nodes left to add.
+    	{ //While there are Nodes left to add.
     		temp = head;
     		for (int i = 0; i < headLength; i++)
-        	{//Finding the Node to be next in line to be reversed.
+        	{ //Finding the Node to be next in line to be reversed.
         		temp = temp.next;
         	}
     		tempReverse.data = temp.data; //Add the Node found above.
     		
     		if (headLength - 1 >= 0)
-    		{//If this is not the last Node.
+    		{ //If this is not the last Node.
     			tempReverse.next = new LinkedList.Node();
     			tempReverse = tempReverse.next; //Cycle to next Node in the reversed Linked List.
     		}

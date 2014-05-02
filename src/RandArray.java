@@ -16,6 +16,6 @@ public class RandArray
 	public static void main(String[] args) 
 	{
 		rng.setSeed(1234569);
-        System.out.println(java.util.Arrays.toString(randArray(10, 5, 20)));
+        System.out.println(java.util.Arrays.toString(randArray(10, 5, 100)));
 	}
 }

@@ -1,8 +1,11 @@
-
+/**
+ * This is the complete LinkedList class, tested for accuracy.
+ * @author jacob.dobkins
+ *
+ */
 
 public class LinkedList
 {
-	
     public static class Node 
     {
         int data;
@@ -23,7 +26,7 @@ public class LinkedList
     	{ //Add each element of A to head.
     		temp.data = A[i]; //Copy data from A to the temp Node.
     		if (i+1 != A.length)
-    		{//If this is not the last Node.
+    		{ //If this is not the last Node.
     			temp.next = new Node();
     			temp = temp.next; //Cycle to the next Node.
     		}

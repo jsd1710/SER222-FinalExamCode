@@ -1,7 +1,7 @@
-
-
-public class RandArrayUnique{
-
+public class RandArrayUnique
+{
+	public static java.util.Random rng = new java.util.Random();
+		
     /** Return an array of random values with no duplicates
      *
      * @param n The number of items in the returned array
@@ -11,12 +11,22 @@ public class RandArrayUnique{
      */
     public static int[] randArrayUnique(int n, int low, int high) 
     {
-        return null; //TODO: Replace this.
+    	int[] result = new int[n];
+    	
+		for (int i = 0; i < n; ++i)
+		{
+			int r = low + (rng.nextInt(high - low + 1));
+			result[i] = r;
+		}
+		return result;
     }
+   
 
     public static void main(String[] args) 
     {
         //Test your code here (do not ask for input)
+    	rng.setSeed(1234569);
+        //System.out.println(java.util.Arrays.toString(randArray(10, 5, 100)));
     }
 }
 
