@@ -3,7 +3,7 @@ Final Exam
 Due midnight of 5-8-2014 (Thursday)
 
 Solve each of these in a separate file. 
-Each solution should be entirely within one JAR file. 
+Each solution should be entirely within one JAVA file. 
 
 I should be able to run tests with
 
@@ -22,7 +22,8 @@ Your code must be correct, concise, and clear.
 
 :Reverse: Write a recursive function to reverse a linked list.  Test it with random arrays.
 
-:Middle: Write a function to find the middle element in a linked list in O(n) steps. You cannot use java.util.LinkedList.  Test it with a list built from your name and at least one other list. 
+:Middle: Write a function to find the middle element in a linked list in O(n) steps. You cannot use java.util.LinkedList.  
+Test it with lists built from random integers. 
 
 
 :BST: Write a simple BST of integers. Write a function that takes a list of integers, builds a tree, and prints the values in preorder and inorder.   
