@@ -66,10 +66,12 @@ public class BST
 		}
     	if (rootNode.left != null)
 		{ //If there is a left Node traverse the left Tree:
+    		System.out.print("->");
     		preorder(rootNode.left);
 		}
     	if (rootNode.right != null)
     	{ //If there is a right Node traverse the right Tree:
+    		System.out.print("->");
     		preorder(rootNode.right);
     	}
     	
@@ -80,6 +82,7 @@ public class BST
     	if (rootNode.left != null)
 		{ //If there is a left Node traverse the left Tree:
     		inorder(rootNode.left);
+    		System.out.print("->");
 		}
     	
     	//Print the data of the left most Nodes not visited.
@@ -87,6 +90,7 @@ public class BST
     	
     	if (rootNode.right != null)
     	{ //If there is a right Node traverse the right Tree:
+    		System.out.print("->");
     		inorder(rootNode.right);
     	}
     }

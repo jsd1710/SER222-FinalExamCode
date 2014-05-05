@@ -4,7 +4,8 @@
  *
  */
 
-public class Middle{
+public class Middle
+{
 
     /** Return the value in the middle of a linked list. 
      *
@@ -16,7 +17,7 @@ public class Middle{
      */
     public static int middle(LinkedList.Node head) 
     {
-    	LinkedList.Node temp = head; //Temp Node used to cycle through the LinkedList head.
+   		LinkedList.Node temp = head; //Temp Node used to cycle through the LinkedList head.
     	
     	int nodeCount = 1;
     	while (temp != null)

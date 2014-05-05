@@ -14,33 +14,15 @@ public class Reverse
     {
     	LinkedList.Node reversedHead = new LinkedList.Node(); //Reversed Linked List.
     	
-    	int headLength = 0; //Records the amount of nodes in head.
-    	
-    	LinkedList.Node temp = head; //Used for traversing the Linked List head.
-    	while (temp.next != null)
-    	{ //While there are initialized nodes in head: count them.
-    		temp = temp.next;
-    		headLength++;
+    	if (head == null || head.next == null)
+    	{ //If there is no more List to reverse, also considers base case if there is no head to begin with.
+    		return head;
     	}
     	
-    	LinkedList.Node tempReverse = reversedHead; //Used for traversing the reversed Linked List.
-    	while (headLength >= 0)
-    	{ //While there are Nodes left to add.
-    		temp = head;
-    		for (int i = 0; i < headLength; i++)
-        	{ //Finding the Node to be next in line to be reversed.
-        		temp = temp.next;
-        	}
-    		tempReverse.data = temp.data; //Add the Node found above.
-    		
-    		if (headLength - 1 >= 0)
-    		{ //If this is not the last Node.
-    			tempReverse.next = new LinkedList.Node();
-    			tempReverse = tempReverse.next; //Cycle to next Node in the reversed Linked List.
-    		}
-    		
-    		headLength--; //One less Node to find.
-    	}
+    	LinkedList.Node nextNode = head.next; //Goes to next Node in List.
+    	head.next = null; //Removes that head Node from the rest of the list
+    	reversedHead = reverse(nextNode); //Recursively breaks lists into smaller lists until the are single Nodes.
+    	nextNode.next = head; //Adds the single Node before itself after it. (e.g. L->2 turns into 2->L where as L is all of the pending individual Nodes)
     	
     	return reversedHead;
     }
@@ -68,6 +50,11 @@ public class Reverse
     	
     	int[] input4 = {1,1};
     	temp = LinkedList.fromArray(input4);
+    	temp = reverse(temp);
+    	LinkedList.printList(temp);
+    	
+    	int[] input5 = {3,1,2};
+    	temp = LinkedList.fromArray(input5);
     	temp = reverse(temp);
     	LinkedList.printList(temp);
     }
