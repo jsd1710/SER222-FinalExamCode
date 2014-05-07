@@ -17,11 +17,11 @@ public class IsUnique
     	Hashtable<Integer, Integer> numbers = new Hashtable<Integer, Integer>();
     	for (int i = 0; i < A.length; i++)
     	{
-    		if (numbers.contains(A[i]))
+    		if (numbers.containsKey(A[i]))
     		{
     			return false;
     		}
-    		numbers.put(i, A[i]);
+    		numbers.put(A[i], i);
     	}
         return true;
     }

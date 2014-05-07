@@ -19,17 +19,19 @@ public class RandArrayUnique
     public static int[] randArrayUnique(int n, int low, int high) 
     {
     	int[] result = new int[n];
+    	
     	Hashtable<Integer, Integer> numbers = new Hashtable<Integer, Integer>();
     	
-    	int r = low + (rng.nextInt(high - low + 1));;
-		for (int i = 0; i < n; ++i)
+    	int r = low + (rng.nextInt(high - low + 1));
+    	
+		for (int i = 0; i < n; ++i) // For O(n).
 		{
-			while (numbers.contains(r))
+			while (numbers.containsKey(r)) //Contains key O(1).
 			{
 				r = low + (rng.nextInt(high - low + 1));
 			}
 			result[i] = r;
-			numbers.put(i,r);
+			numbers.put(r,i); //Put O(1).
 		}
 		return result;
     }
