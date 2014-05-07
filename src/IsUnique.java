@@ -34,6 +34,9 @@ public class IsUnique
         int[] a1 = RandArray.randArray(10, 0, 100);
         System.out.println(isUnique(a1));
         
+        int[] a8 = {9,8,6,8,8};
+        System.out.println(isUnique(a8) + "False");
+        
         int[] a2 = RandArray.randArray(10, 0, 0);
         System.out.println(isUnique(a2));
         

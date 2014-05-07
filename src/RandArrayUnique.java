@@ -1,5 +1,3 @@
-import java.util.Hashtable;
-
 /**
  * This is the complete RandArrayUnique class, tested for accuracy.
  * @author jacob.dobkins
@@ -16,8 +14,9 @@ public class RandArrayUnique
      * @param high The maximum possible random value to generate. 
      * @return An array of random integers in random order, each in low..high.
      */
-    public static int[] randArrayUnique(int n, int low, int high) 
+    public static int[] randArrayUnique(int n, int low, int high)
     {
+    	/* Uncomment this field if you want to use the HashTabled algorithm.
     	int[] result = new int[n];
     	
     	Hashtable<Integer, Integer> numbers = new Hashtable<Integer, Integer>();
@@ -33,6 +32,8 @@ public class RandArrayUnique
 			result[i] = r;
 			numbers.put(r,i); //Put O(1).
 		}
+		*/
+    	int[] result = alternative(n, low, high); //Comment this if you want to use Hashtabled algorithm.
 		return result;
     }
    
@@ -45,6 +46,16 @@ public class RandArrayUnique
         System.out.println(java.util.Arrays.toString(randArrayUnique(6, 5, 10)));
         System.out.println(java.util.Arrays.toString(randArrayUnique(15, 0, 100)));
         System.out.println(java.util.Arrays.toString(randArrayUnique(30, 5, 34)));
+    }
+    
+    private static int[] alternative(int n, int low, int high)
+    {
+    	int[] result = RandArray.randArray(n,low,high);;
+    	while (!IsUnique.isUnique(result))
+    	{
+    		result = RandArray.randArray(n,low,high);
+    	}
+    	return result;
     }
 }
 
